@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Browser</title>
+  <link rel="stylesheet" href="browser.css">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="toolbar">
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button id="back-btn" class="nav-btn" title="Back">←</button>
+      <button id="forward-btn" class="nav-btn" title="Forward">→</button>
+      <button id="reload-btn" class="nav-btn" title="Reload">↻</button>
+      <button id="home-btn" class="nav-btn" title="Home">⌂</button>
+    </div>
+
+    <!-- Address Bar -->
+    <div class="address-bar-container">
+      <input type="text" id="address-bar" placeholder="Search or enter URL..." />
+      <button id="go-btn" class="go-btn">Go</button>
+    </div>
+
+    <!-- Browser Controls -->
+    <div class="browser-controls">
+      <button id="new-tab-btn" class="control-btn" title="New Tab">+</button>
+      <button id="menu-btn" class="control-btn" title="Menu">☰</button>
+    </div>
+  </div>
+
+  <!-- Tabs Container -->
+  <div class="tabs-container" id="tabs-container">
+    <!-- Tabs will be added here dynamically -->
+  </div>
+
+  <!-- BrowserView will be rendered here by Electron (native, not HTML) -->
+
+  <script src="browser.js"></script>
+</body>
+</html>
