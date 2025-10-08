@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Electron build output
+out/
+
+# System files
+.DS_Store
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
